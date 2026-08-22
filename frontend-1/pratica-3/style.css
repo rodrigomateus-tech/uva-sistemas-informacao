@@ -1,0 +1,101 @@
+:root {
+    --cor-fundo:     #1b1430;
+    --cor-cartao:    #2a2049;
+    --cor-texto:     #f1ecff;
+    --cor-suave:     #b9aedd;
+    --cor-destaque:  #8b5cf6;
+    --cor-curtido:   #f43f5e;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.5;
+}
+
+header {
+    background-color: var(--cor-cartao);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-bottom: 3px solid var(--cor-destaque);
+}
+header h1 { font-size: 1.6rem; }
+header p { color: var(--cor-suave); font-size: 0.9rem; }
+
+main {
+    max-width: 480px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.post {
+    background-color: var(--cor-cartao);
+    border-radius: 12px;
+    padding: 1.2rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+.post-cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 0.8rem;
+}
+
+.avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: var(--cor-destaque);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.post-data { color: var(--cor-suave); font-size: 0.8rem; }
+
+.post-texto { margin-bottom: 1rem; }
+
+.post-acoes {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+.btn-curtir {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background-color: transparent;
+    border: 1px solid var(--cor-suave);
+    color: var(--cor-texto);
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+.btn-curtir:hover { border-color: var(--cor-destaque); }
+.btn-curtir:disabled { opacity: 0.6; cursor: default; }
+
+.btn-curtir.curtido {
+    border-color: var(--cor-curtido);
+    color: var(--cor-curtido);
+}
+
+.icone { font-size: 1.1rem; }
+
+.contador { color: var(--cor-suave); font-size: 0.9rem; }
+
+footer {
+    text-align: center;
+    padding: 1.2rem;
+    color: var(--cor-suave);
+    font-size: 0.8rem;
+}

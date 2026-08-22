@@ -1,0 +1,80 @@
+        :root {
+            --cor-principal: #a8432b;   
+            --cor-destaque:  #cf9b2e;   
+            --cor-oliva:     #6f7338;   
+            --cor-fundo:     #f7efe0;   
+            --cor-suave:     #e6d4b8;   
+            --cor-texto:     #322419;   
+        }
+ 
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+ 
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            line-height: 1.6;
+        }
+ 
+        /* topo da página */
+        header {
+            background-color: var(--cor-principal);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+            border-bottom: 4px solid var(--cor-destaque);
+        }
+        header h1 { font-size: 2rem; letter-spacing: 1px; }
+        header p { font-style: italic; opacity: 0.9; }
+ 
+        /* menu de navegação */
+        nav {
+            background-color: var(--cor-suave);
+            padding: 0.8rem;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--cor-texto);
+            font-weight: bold;
+        }
+        nav a:hover { color: var(--cor-principal); }
+ 
+        /* conteúdo principal */
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+ 
+        section { margin-bottom: 2rem; }
+        section h2 {
+            color: var(--cor-principal);
+            border-bottom: 2px solid var(--cor-oliva);
+            padding-bottom: 0.4rem;
+            margin-bottom: 1rem;
+        }
+        ul.ingredientes { padding-left: 1.5rem; }
+        ol.preparo { padding-left: 1.5rem; }
+        ol.preparo li { margin-bottom: 0.6rem; }
+ 
+        /* destaque dourado */
+        ul.ingredientes li::marker { color: var(--cor-destaque); }
+        ol.preparo li::marker { color: var(--cor-destaque); font-weight: bold; }
+ 
+        /* rodapé */
+        footer {
+            background-color: var(--cor-texto);
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+            border-top: 4px solid var(--cor-destaque);
+        }
