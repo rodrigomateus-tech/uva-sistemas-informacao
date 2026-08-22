@@ -1,0 +1,131 @@
+:root {
+    --cor-fundo:     #0d1b2a;
+    --cor-secao:     #142d3f;
+    --cor-cartao:    #1b3a4f;
+    --cor-texto:     #eef4f8;
+    --cor-suave:     #a9c0cf;
+    --cor-marca:     #0d9488;
+    --cor-marca-cl:  #2dd4bf;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 2rem;
+    background-color: var(--cor-fundo);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.logo {
+    width: 34px;
+    height: 34px;
+    background-color: var(--cor-marca);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.nome-marca { font-weight: 600; font-size: 1.05rem; }
+
+nav { display: flex; gap: 1.4rem; }
+nav a {
+    color: var(--cor-suave);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+nav a:hover { color: var(--cor-marca-cl); }
+
+.hero {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 4.5rem 1.5rem 3.5rem;
+}
+.hero h1 { font-size: 2rem; margin-bottom: 1rem; }
+.hero p { color: var(--cor-suave); margin-bottom: 1.8rem; font-size: 1rem; }
+
+.botao-cta {
+    display: inline-block;
+    background-color: var(--cor-marca);
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1.6rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+}
+.botao-cta:hover { background-color: var(--cor-marca-cl); }
+.botao-cta.secundario {
+    background-color: transparent;
+    border: 1.5px solid var(--cor-marca-cl);
+    color: var(--cor-marca-cl);
+}
+
+.servicos {
+    background-color: var(--cor-secao);
+    padding: 3.5rem 1.5rem;
+    text-align: center;
+}
+.servicos h2 { margin-bottom: 2rem; font-size: 1.5rem; }
+
+.grade-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.4rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.servico {
+    background-color: var(--cor-cartao);
+    border-radius: 12px;
+    padding: 1.6rem 1.3rem;
+    text-align: left;
+}
+.servico .icone { font-size: 1.6rem; margin-bottom: 0.7rem; }
+.servico h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
+.servico p { color: var(--cor-suave); font-size: 0.88rem; }
+
+.sobre {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 3.5rem 1.5rem;
+}
+.sobre h2 { margin-bottom: 1rem; font-size: 1.5rem; }
+.sobre p { color: var(--cor-suave); }
+
+.contato {
+    background-color: var(--cor-secao);
+    text-align: center;
+    padding: 3.5rem 1.5rem;
+}
+.contato h2 { margin-bottom: 0.6rem; font-size: 1.5rem; }
+.contato p { color: var(--cor-suave); margin-bottom: 1.4rem; }
+
+.rodape {
+    text-align: center;
+    padding: 1.5rem;
+    color: var(--cor-suave);
+    font-size: 0.8rem;
+}
