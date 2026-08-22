@@ -12,8 +12,8 @@ Sistemas de Informação na Universidade Veiga de Almeida (UVA).
 
 ## Disciplinas
 
-- **[Introdução à Lógica de Programação](./logica-de-programacao)** — primeiros programas em C (variáveis, operadores, decisão).
-- **[Linguagem de Programação I](./linguagem-programacao-1-c)** — C aplicado a laços, matrizes, vetores e manipulação de arquivos.
-- **[Frontend I](./frontend-1)** — páginas em HTML5, CSS3 e JavaScript.
+- **[Introdução à Lógica de Programação](./logica-de-programacao)** - primeiros programas em C (variáveis, operadores, decisão).
+- **[Linguagem de Programação I](./linguagem-programacao-1-c)** - C aplicado a laços, matrizes, vetores e manipulação de arquivos.
+- **[Frontend I](./frontend-1)** - páginas em HTML5, CSS3 e JavaScript.
 
 Novas disciplinas serão adicionadas neste repositório conforme o curso avança.
